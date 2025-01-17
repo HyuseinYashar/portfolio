@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+
+  a{
+    font-family: "Bricolage Grotesque";
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: #F8F9FA;
+  }
+}
