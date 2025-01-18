@@ -1,22 +1,80 @@
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 720px;
 }
 
-
-
-.stickers{
-    display: flex;
-    flex-direction: column;
-}
-.asd{
-    background-image: url('/assets/img/about-me/Ripped-paper-yellow.svg');
+.stickers {
+  padding: 144px 120px 144px 120px;
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  .asd {
+    gap: 10px;
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size: auto;
     width: 600px;
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
+    > p {
+      font-weight: 400;
+      font-size: 24px;
+      color: white;
+    }
+  }
+}
+
+.who {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+  }
+}
+
+.aboutDiv {
+  // padding: 144px 120px 144px 120px;
+  gap: 116px;
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.btn-letsTalk {
+  bottom: 0;
+  right: 0;
+}
+
+.btn_main {
+  > a {
+    text-decoration: none;
+    font-family: "Bricolage Grotesque";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+  }
+  display: inline-block;
+  border-radius: 100px;
+  padding: 12px 24px 12px 24px;
+  background: #00000003;
+  border: 1px solid #000000;
+  box-shadow: 2px 4px 0px 0px #000000;
+  transform: translateX(-2px) translateY(-6px);
+  transition: all 0.5s ease-in-out; /* Animation */
+  &:hover {
+    background-color: #f87a55;
+    transform: translateX(0px) translateY(0px);
+    box-shadow: none;
+  }
 }
