@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
-import { LangToggleComponent } from '../../lang-toggle/lang-toggle.component';
+import { LangToggleComponent } from '../../main/lang-toggle/lang-toggle.component';
 
 @Component({
   selector: 'app-header',

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactComponent } from './contact/contact.component';
-import { HeroComponent } from './hero/hero.component';
-import { SkillsComponent } from './skills/skills.component';
+import { AboutMeComponent } from './main/about-me/about-me.component';
+import { ContactComponent } from './main/contact/contact.component';
+import { HeroComponent } from './main/hero/hero.component';
+import { SkillsComponent } from './main/skills/skills.component';
 
 @Component({
   selector: 'app-root',

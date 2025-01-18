@@ -1,0 +1,176 @@
+main {
+  height: 100vh;
+  width: 100%;
+  // max-height: 1440px;
+  margin: 0;
+  background-image: url("/assets/img/hero-images/hero-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.content-main {
+  width: 850px;
+}
+.upperWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img{
+    rotate: 8deg  ;
+    filter: grayscale(1);
+    &:hover{
+      filter: grayscale(0);
+    }
+  }
+  .leftWrapper {
+    .animate-hand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 250px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .animate-hand .waving_hand {
+      height: 30px;
+      width: 30px;
+      opacity: 0; /* entspricht 10% */
+      right: -100px;
+      position: relative;
+      transition: all 1s ease-in-out; /* Animation */
+    }
+
+    .animate-hand button {
+      text-decoration: none;
+      background-color: transparent;
+      left: 0;
+      color: white;
+      border: 1px solid;
+      border-radius: 100px;
+      padding: 12px 24px;
+      transition: all 1s ease-out; /* Animation */
+    }
+
+    .animate-hand button span {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .animate-hand:hover button {
+      width: 100%;
+      background-color: #3355ff;
+    }
+
+    .animate-hand:hover button span {
+      display: none;
+    }
+
+    .animate-hand:hover .waving_hand {
+      opacity: 1;
+      right: -210px;
+      rotate: 360deg;
+    }
+
+    button:hover::after {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      content: "I'M HYUSEIN YASHAR!";
+      color: white;
+    }
+
+    margin-top: 100px;
+    span {
+      display: flex;
+      p {
+        transition: all 0.7s ease-in-out; /* Animation */
+      }
+    }
+    p {
+      color: white;
+      font-size: 128px;
+      font-family: "Bricolage Grotesque";
+      font-weight: 700;
+    }
+    img {
+      height: 240px;
+      width: 200px;
+    }
+  }
+}
+
+.toLowercase:hover {
+  text-transform: lowercase;
+  color: #f7c518 !important;
+}
+.toUpperCase:hover {
+  text-transform: uppercase;
+  color: #f7c518 !important;
+}
+.lowerWrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  span {
+    display: flex;
+  }
+  .toLowercase {
+    color: white;
+    font-size: 128px;
+    font-family: "Bricolage Grotesque";
+    font-weight: 700;
+    transition: all 0.7s ease-in-out; /* Animation */
+  }
+}
+.btn_main {
+  > a {
+    text-decoration: none;
+    font-family: "Bricolage Grotesque";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+  }
+  display: inline-block;
+  border-radius: 100px;
+  padding: 12px 24px 12px 24px;
+  background: #00000003;
+  border: 1px solid #f8f9fa;
+  box-shadow: 2px 4px 0px 0px #f8f9fa;
+  transform: translateX(-2px) translateY(-6px);
+  transition: all 0.5s ease-in-out; /* Animation */
+  &:hover {
+    background-color: #f87a55;
+    transform: translateX(0px) translateY(0px);
+    box-shadow: none;
+  }
+}
+.links {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    box-shadow: inset 0 0 0 0 #3355ff;
+    transition: box-shadow 0.2s ease-in-out;
+    color: black;
+    line-height: 40px;
+    border-radius: 100%;
+    border: solid 1px white;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+  }
+
+  img:hover {
+    box-shadow: inset 0 -40px 0 -1px #3355ff;
+  }
+}

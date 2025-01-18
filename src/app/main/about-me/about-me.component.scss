@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.stickers{
+    display: flex;
+    flex-direction: column;
+}
+.asd{
+    background-image: url('/assets/img/about-me/Ripped-paper-yellow.svg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width: 600px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../shared/header/header.component';
-import { NavbarComponent } from "../shared/navbar/navbar.component";
+import { HeaderComponent } from '../../shared/header/header.component';
+import { NavbarComponent } from "../../shared/navbar/navbar.component";
 
 @Component({
   selector: 'app-hero',
