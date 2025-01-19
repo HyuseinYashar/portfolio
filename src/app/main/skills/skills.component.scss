@@ -1,0 +1,100 @@
+main {
+  max-height: 800px;
+  border: 1px red solid;
+  background-image: url("/assets/img/skills/skillsBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 144px 120px 144px 120px;
+}
+.upperWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 144px;
+  gap: 48px;
+}
+.skillSet {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+  > p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f8f9fa;
+  }
+  > h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #f8f9fa;
+  }
+}
+
+.paperStrip {
+  padding: 32px;
+  // background-color: white;
+  background-image: url("/assets/img/skills/skillsPapel.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  > p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+  }
+}
+.skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  gap: 40px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    >p{
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+    }
+    >img{
+        filter: grayscale(1);
+        transition: all 0.2s ease-in-out; /* Animation */
+        &:hover{
+            filter: grayscale(0);
+            transform: scale(0.7);
+        }
+    }
+  }
+}
+
+.lowerWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.peelDiv{
+  z-index: 10;
+    width: 200px;
+    height: 200px;
+    background-image: url('/assets/img/skills/peelBg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    rotate: 8deg;
+    position: relative;
+    >img{
+      height: 200px;
+      width: 200px;
+      position: absolute;
+    }
+}
+
+
+.peel {
+  transition: all 2s ease; /* Animation */
+    &:hover{
+    transform: translateX(-200px) translateY(100px);    
+    content: url('/assets/img/skills/secondLayer.png');
+  }
+}

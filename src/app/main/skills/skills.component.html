@@ -1,1 +1,28 @@
-<p>skills works!</p>
+<main>
+  <div>
+    <div class="upperWrapper">
+      <span class="skillSet">
+        <p>My Stack</p>
+        <h2>Skill set</h2>
+      </span>
+      <div class="paperStrip">
+        <p>
+          I have gained experience in building projects with a variety of <br />
+          frontend technologies and concepts. With a strong growth mindset,<br />
+          I’m always exploring new areas to enhance my skill set.
+        </p>
+      </div>
+    </div>
+    <div class="lowerWrapper">
+      <div class="skillsBox">
+        <span *ngFor="let skill of skills">
+          <img [src]="skill.svg" />
+          <p>{{ skill.label }}</p>
+        </span>
+      </div>
+      <div class="peelDiv">
+        <img class="peel" src="/assets/img/skills/firstLayer.png" alt="">
+      </div>
+    </div>
+  </div>
+</main>
